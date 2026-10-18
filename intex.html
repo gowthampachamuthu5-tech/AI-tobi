@@ -1,0 +1,1496 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050812">
+  <meta name="description" content="Meet Tobi, your futuristic AI personal assistant.">
+  <title>AI Tobi | Your Personal AI Assistant</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="background-grid"></div>
+  <div class="ambient-glow glow-one"></div>
+  <div class="ambient-glow glow-two"></div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="#home" class="logo" aria-label="Tobi home">
+      <span class="logo-icon">T</span>
+      <span>TOBI<span class="logo-dot">.</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#capabilities" class="nav-link">Capabilities</a>
+      <a href="#assistant" class="nav-link">Assistant</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#assistant" class="nav-cta">Get Started <span>↗</span></a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero" id="home">
+
+      <div class="hero-content">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          YOUR PERSONAL AI ASSISTANT
+        </div>
+
+        <h1>
+          Meet Your<br>
+          Personal <span class="gradient-text">AI.</span>
+        </h1>
+
+        <p class="hero-description">
+          Meet Tobi — your intelligent digital companion.
+          Ask questions, explore ideas, and simplify your
+          everyday tasks with the power of AI.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn btn-primary" id="activateBtn">
+            <span class="button-icon">◉</span>
+            <span id="activateText">Activate Tobi</span>
+            <span class="button-arrow">↗</span>
+          </button>
+
+          <a href="#capabilities" class="btn btn-secondary">
+            Explore Features <span>↓</span>
+          </a>
+        </div>
+
+        <p class="voice-status" id="voiceStatus" aria-live="polite">
+          <span class="mini-pulse"></span>
+          Ready when you are
+        </p>
+
+        <div class="hero-trust">
+          <div class="avatar-stack" aria-hidden="true">
+            <span>T</span>
+            <span>AI</span>
+            <span>✦</span>
+          </div>
+          <div>
+            <strong>Think smarter. Do more.</strong>
+            <p>Your next-generation assistant experience.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animated AI Core -->
+      <div class="hero-visual" id="assistant">
+        <div class="visual-label label-top">
+          <span class="tiny-dot"></span>
+          TOBI CORE <span class="label-divider">/</span> V1.0
+        </div>
+
+        <div class="orb-stage" id="orbStage">
+          <div class="orb-halo halo-outer"></div>
+          <div class="orb-halo halo-middle"></div>
+          <div class="orb-halo halo-inner"></div>
+
+          <div class="orbit orbit-one">
+            <span class="orbit-point"></span>
+          </div>
+          <div class="orbit orbit-two">
+            <span class="orbit-point"></span>
+          </div>
+          <div class="orbit orbit-three">
+            <span class="orbit-point"></span>
+          </div>
+
+          <div class="orb-core">
+            <div class="orb-core-inner">
+              <div class="core-symbol">T</div>
+              <div class="core-line"></div>
+              <span class="core-caption">INTELLIGENCE</span>
+            </div>
+          </div>
+
+          <div class="orb-crosshair crosshair-top"></div>
+          <div class="orb-crosshair crosshair-bottom"></div>
+          <div class="orb-crosshair crosshair-left"></div>
+          <div class="orb-crosshair crosshair-right"></div>
+        </div>
+
+        <div class="visual-label label-bottom">
+          <span class="equalizer">
+            <i></i><i></i><i></i><i></i><i></i>
+          </span>
+          <span id="orbStatus">SYSTEM STANDBY</span>
+        </div>
+
+        <div class="floating-card card-left">
+          <span class="floating-icon">✧</span>
+          <div>
+            <strong>Smart Thinking</strong>
+            <span>Ideas into action</span>
+          </div>
+        </div>
+
+        <div class="floating-card card-right">
+          <span class="floating-icon">⌁</span>
+          <div>
+            <strong>Voice Interface</strong>
+            <span>Talk naturally</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Capability preview -->
+    <section class="capabilities" id="capabilities">
+      <div class="section-heading">
+        <span class="eyebrow">BUILT FOR YOUR WORLD</span>
+        <h2>One assistant. <span>Endless possibilities.</span></h2>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon">⌁</div>
+          <h3>Voice Control</h3>
+          <p>Interact with Tobi using your voice.</p>
+          <span class="feature-number">01 / VOICE</span>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">✧</div>
+          <h3>Smart Conversations</h3>
+          <p>Explore questions, ideas and solutions.</p>
+          <span class="feature-number">02 / INTELLIGENCE</span>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">⏣</div>
+          <h3>Everyday Productivity</h3>
+          <p>Make everyday digital tasks simpler.</p>
+          <span class="feature-number">03 / PRODUCTIVITY</span>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer" id="about">
+      <a href="#home" class="logo">
+        <span class="logo-icon">T</span>
+        <span>TOBI<span class="logo-dot">.</span></span>
+      </a>
+      <p>Designed for a smarter tomorrow.</p>
+      <span>© <span id="year"></span> AI Tobi</span>
+    </footer>
+  </main>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050812">
+  <title>AI Tobi | Voice Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="brand" href="#home">
+      <span class="brand-icon">T</span>
+      <span>TOBI<span class="cyan">.</span></span>
+    </a>
+
+    <div class="system-status">
+      <span class="status-dot"></span>
+      <span id="systemStatus">SYSTEM READY</span>
+    </div>
+
+    <a class="back-link" href="#home">Voice AI <span>↗</span></a>
+  </header>
+
+  <main id="home">
+    <section class="voice-section">
+
+      <div class="intro">
+        <span class="eyebrow">
+          <span class="tiny-line"></span>
+          TOBI INTELLIGENCE SYSTEM
+        </span>
+
+        <h1>Your Voice.<br>Your <span class="gradient">Assistant.</span></h1>
+
+        <p>
+          Speak naturally. Let Tobi listen, understand your words,
+          and respond with a voice of its own.
+        </p>
+      </div>
+
+      <div class="assistant-panel">
+
+        <div class="panel-header">
+          <div>
+            <span class="panel-label">VOICE INTERFACE</span>
+            <h2>Tobi Core <span class="version">V1.0</span></h2>
+          </div>
+
+          <span class="online-badge">
+            <span class="status-dot"></span>
+            <span id="onlineText">STANDBY</span>
+          </span>
+        </div>
+
+        <!-- Animated microphone and AI core -->
+        <div class="voice-visual" id="voiceVisual">
+          <div class="ring ring-outer"></div>
+          <div class="ring ring-middle"></div>
+          <div class="ring ring-inner"></div>
+
+          <div class="wave wave-one"></div>
+          <div class="wave wave-two"></div>
+          <div class="wave wave-three"></div>
+
+          <button
+            class="mic-button"
+            id="micButton"
+            type="button"
+            aria-label="Start listening"
+            aria-pressed="false"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="9" y="2" width="6" height="12" rx="3"></rect>
+              <path d="M5 10v2a7 7 0 0 0 14 0v-2"></path>
+              <path d="M12 19v3M8 22h8"></path>
+            </svg>
+          </button>
+
+          <span class="orbit-dot dot-one"></span>
+          <span class="orbit-dot dot-two"></span>
+          <span class="orbit-dot dot-three"></span>
+        </div>
+
+        <div class="listening-info">
+          <h3 id="listeningTitle">Ready to listen</h3>
+          <p id="listeningDescription" aria-live="polite">
+            Press the microphone and say something.
+          </p>
+        </div>
+
+        <div class="visualizer" id="visualizer" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span>
+        </div>
+
+        <div class="controls">
+          <button class="btn btn-primary" id="startButton" type="button">
+            <span>🎙</span> Start Listening
+          </button>
+          <button class="btn btn-secondary" id="stopButton" type="button" disabled>
+            Stop
+          </button>
+        </div>
+
+        <p class="hint">
+          <span class="hint-dot"></span>
+          Your microphone is only used after you activate voice input.
+        </p>
+
+        <!-- Transcript -->
+        <div class="transcript-box">
+          <div class="transcript-heading">
+            <span>CONVERSATION TRANSCRIPT</span>
+            <button id="clearButton" type="button">Clear</button>
+          </div>
+
+          <div class="transcript-content" id="transcriptContent" aria-live="polite">
+            <div class="transcript-message assistant-message">
+              <span class="message-icon">T</span>
+              <div>
+                <span class="message-label">TOBI</span>
+                <p>Hello! I'm Tobi. Click the microphone and say
+                  "What time is it?" or ask me a question.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Type a message when voice input is unavailable -->
+        <form class="text-input-form" id="textForm">
+          <input
+            id="textInput"
+            type="text"
+            placeholder="Type a message to Tobi..."
+            aria-label="Message to Tobi"
+            autocomplete="off"
+          >
+          <button type="submit" aria-label="Send message">➤</button>
+        </form>
+
+      </div>
+
+      <div class="quick-commands">
+        <p>TRY A QUICK COMMAND</p>
+        <div class="command-list">
+          <button class="command-chip" data-command="Hello Tobi">✦ Say hello</button>
+          <button class="command-chip" data-command="What time is it?">◷ Current time</button>
+          <button class="command-chip" data-command="What is today's date?">▦ Today's date</button>
+          <button class="command-chip" data-command="Tell me a fun fact">✧ Fun fact</button>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <span class="brand-small">TOBI<span class="cyan">.</span></span>
+    <p>Intelligence at your command.</p>
+    <span>© <span id="year"></span> AI Tobi</span>
+  </footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#060914">
+  <title>AI Tobi | Smart Chat</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="chat.css">
+  <script src="chat.js" defer></script>
+</head>
+<body>
+
+  <div class="app-shell">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <a href="#" class="brand">
+        <span class="brand-logo">T</span>
+        <span>TOBI<span class="cyan">.</span></span>
+      </a>
+
+      <button class="new-chat-button" id="newChatButton">
+        <span>＋</span> New conversation
+      </button>
+
+      <div class="sidebar-label">YOUR WORKSPACE</div>
+
+      <nav class="sidebar-nav">
+        <button class="nav-item active" data-view="chat">
+          <span>◈</span> AI Chat
+        </button>
+        <button class="nav-item" data-view="voice">
+          <span>♬</span> Voice Assistant
+        </button>
+        <button class="nav-item" data-view="dashboard">
+          <span>▦</span> Dashboard
+        </button>
+      </nav>
+
+      <div class="sidebar-label recent-label">RECENT CHATS</div>
+
+      <div class="recent-chats" id="recentChats">
+        <button class="recent-chat active" data-chat="0">
+          <span>◌</span>
+          <span class="recent-title">Welcome to Tobi</span>
+        </button>
+      </div>
+
+      <div class="sidebar-bottom">
+        <div class="profile-card">
+          <div class="profile-avatar">G</div>
+          <div class="profile-details">
+            <strong>Guest User</strong>
+            <span>Personal workspace</span>
+          </div>
+          <span class="profile-menu">•••</span>
+        </div>
+        <p class="sidebar-version">TOBI AI INTERFACE · V1.0</p>
+      </div>
+    </aside>
+
+    <!-- Main chat -->
+    <main class="main-content">
+
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="menu-button" id="menuButton" aria-label="Toggle sidebar">☰</button>
+          <div>
+            <span class="topbar-eyebrow">YOUR PERSONAL AI</span>
+            <h1>AI Chat <span class="top-version">V1.0</span></h1>
+          </div>
+        </div>
+
+        <div class="topbar-right">
+          <span class="connection-dot"></span>
+          <span id="connectionStatus">DEMO MODE</span>
+          <button class="clear-button" id="clearButton">Clear chat</button>
+        </div>
+      </header>
+
+      <section class="chat-section">
+
+        <div class="chat-feed" id="chatFeed" aria-live="polite" aria-label="Conversation">
+
+          <!-- Welcome screen -->
+          <div class="welcome-screen" id="welcomeScreen">
+            <div class="welcome-orb">
+              <div class="welcome-orb-ring ring-a"></div>
+              <div class="welcome-orb-ring ring-b"></div>
+              <div class="welcome-orb-core">T</div>
+              <span class="welcome-spark spark-a"></span>
+              <span class="welcome-spark spark-b"></span>
+            </div>
+
+            <span class="welcome-eyebrow">TOBI INTELLIGENCE ONLINE</span>
+            <h2>What can I help you <span>with?</span></h2>
+            <p>Ask a question, explore an idea, or start something new.</p>
+
+            <div class="suggestion-grid">
+              <button class="suggestion-card" data-prompt="Explain artificial intelligence in simple words">
+                <span class="suggestion-icon cyan-icon">✧</span>
+                <strong>Learn something</strong>
+                <span>Explain a complex topic simply</span>
+                <span class="suggestion-arrow">↗</span>
+              </button>
+
+              <button class="suggestion-card" data-prompt="Give me five creative website ideas">
+                <span class="suggestion-icon purple-icon">✳</span>
+                <strong>Brainstorm ideas</strong>
+                <span>Discover creative possibilities</span>
+                <span class="suggestion-arrow">↗</span>
+              </button>
+
+              <button class="suggestion-card" data-prompt="Write a simple HTML webpage for beginners">
+                <span class="suggestion-icon blue-icon">⌘</span>
+                <strong>Write some code</strong>
+                <span>Build and learn step by step</span>
+                <span class="suggestion-arrow">↗</span>
+              </button>
+
+              <button class="suggestion-card" data-prompt="Give me a productive daily routine">
+                <span class="suggestion-icon green-icon">◷</span>
+                <strong>Plan my day</strong>
+                <span>Organize tasks and priorities</span>
+                <span class="suggestion-arrow">↗</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Composer -->
+        <div class="composer-area">
+          <form class="composer" id="chatForm">
+            <textarea
+              id="messageInput"
+              rows="1"
+              maxlength="4000"
+              placeholder="Message Tobi..."
+              aria-label="Type your message"
+            ></textarea>
+
+            <div class="composer-toolbar">
+              <div class="composer-hint">
+                <span class="keyboard-icon">↵</span>
+                Enter to send · Shift + Enter for a new line
+              </div>
+
+              <div class="composer-actions">
+                <span class="character-count" id="characterCount">0 / 4000</span>
+                <button class="send-button" id="sendButton" type="submit" aria-label="Send message">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 19V5M5 12l7-7 7 7"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <p class="disclaimer">
+            Tobi demo mode can make mistakes. Verify important information.
+          </p>
+        </div>
+
+      </section>
+    </main>
+  </div>
+
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b14">
+  <title>TOBI AI | Smart Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#overview">
+        <span class="brand-icon">T</span>
+        <span>TOBI<span class="brand-ai"> AI</span></span>
+      </a>
+
+      <div class="side-label">WORKSPACE</div>
+      <nav class="navigation">
+        <a href="#overview" class="nav-link active">
+          <span>◈</span> Overview
+        </a>
+        <a href="#assistant" class="nav-link">
+          <span>✧</span> AI Assistant
+        </a>
+        <a href="#activity" class="nav-link">
+          <span>▥</span> Activity
+        </a>
+        <a href="#tools" class="nav-link">
+          <span>⌘</span> Quick Tools
+        </a>
+      </nav>
+
+      <div class="side-label">PREFERENCES</div>
+      <nav class="navigation">
+        <button class="nav-link" id="themeButton">
+          <span>◐</span> Toggle Theme
+        </button>
+        <button class="nav-link" id="helpButton">
+          <span>ⓘ</span> Help Center
+        </button>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="upgrade-card">
+          <div class="upgrade-icon">✦</div>
+          <h3>Your AI workspace</h3>
+          <p>Explore smarter ways to get things done.</p>
+          <button id="exploreButton" class="upgrade-button">Explore TOBI ↗</button>
+        </div>
+
+        <div class="profile">
+          <div class="avatar">G</div>
+          <div class="profile-info">
+            <strong>Guest User</strong>
+            <span>Personal workspace</span>
+          </div>
+          <span class="profile-menu">•••</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content" id="overview">
+
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="menu-button" id="menuButton" aria-label="Open navigation">☰</button>
+          <div>
+            <div class="breadcrumb">Workspace <span>/</span> Overview</div>
+            <h1>Smart Dashboard</h1>
+          </div>
+        </div>
+
+        <div class="topbar-right">
+          <div class="live-indicator"><span></span> All systems ready</div>
+          <div class="top-date" id="topDate">Loading date...</div>
+          <button class="icon-button" id="notificationButton" aria-label="Notifications">♧<i></i></button>
+        </div>
+      </header>
+
+      <!-- WELCOME -->
+      <section class="welcome-banner">
+        <div class="welcome-copy">
+          <span class="eyebrow"><span class="sparkle">✦</span> YOUR PERSONAL AI</span>
+          <h2>Welcome back, <span>Explorer.</span></h2>
+          <p>Your intelligent workspace is ready. What would you like to accomplish today?</p>
+          <button class="primary-button" id="startAssistant">Talk to TOBI <span>↗</span></button>
+        </div>
+
+        <div class="banner-orb" aria-label="Decorative glowing AI orb">
+          <div class="orb-ring ring-one"></div>
+          <div class="orb-ring ring-two"></div>
+          <div class="orb-core"><span>T</span></div>
+          <div class="orb-dot dot-one"></div>
+          <div class="orb-dot dot-two"></div>
+        </div>
+        <div class="banner-glow"></div>
+      </section>
+
+      <!-- STATS -->
+      <section class="stats-grid" aria-label="Dashboard statistics">
+        <article class="stat-card">
+          <div class="stat-top">
+            <span class="stat-icon cyan">✧</span>
+            <span class="stat-tag">DEMO DATA</span>
+          </div>
+          <p class="stat-label">AI interactions</p>
+          <div class="stat-bottom">
+            <h3 id="interactionCount">128</h3>
+            <span class="stat-note positive">↗ This session</span>
+          </div>
+          <div class="mini-bars">
+            <i style="height:35%"></i><i style="height:55%"></i>
+            <i style="height:43%"></i><i style="height:76%"></i>
+            <i style="height:60%"></i><i style="height:90%"></i>
+            <i style="height:70%"></i><i style="height:100%"></i>
+          </div>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-top">
+            <span class="stat-icon violet">◷</span>
+            <span class="stat-tag">ESTIMATE</span>
+          </div>
+          <p class="stat-label">Time saved</p>
+          <div class="stat-bottom">
+            <h3>4.6 <small>hrs</small></h3>
+            <span class="stat-note positive">Productivity</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill purple-fill"></div></div>
+          <span class="progress-caption">Weekly goal · 68%</span>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-top">
+            <span class="stat-icon green">⌁</span>
+            <span class="status-pill"><span></span> Online</span>
+          </div>
+          <p class="stat-label">Assistant status</p>
+          <div class="stat-bottom">
+            <h3 class="status-text">Ready</h3>
+          </div>
+          <p class="stat-description">TOBI is waiting for your command.</p>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-top">
+            <span class="stat-icon orange">⚡</span>
+            <span class="stat-tag">DEMO DATA</span>
+          </div>
+          <p class="stat-label">Tasks completed</p>
+          <div class="stat-bottom">
+            <h3 id="taskCount">24</h3>
+            <span class="stat-note">Workspace tasks</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill orange-fill"></div></div>
+          <span class="progress-caption">Daily target · 80%</span>
+        </article>
+      </section>
+
+      <!-- MAIN GRID -->
+      <section class="dashboard-grid">
+
+        <!-- ACTIVITY CHART -->
+        <article class="panel activity-panel" id="activity">
+          <div class="panel-header">
+            <div>
+              <span class="section-kicker">YOUR PERFORMANCE</span>
+              <h3>Activity overview</h3>
+            </div>
+            <select id="chartRange" class="select-control" aria-label="Chart range">
+              <option value="7">Last 7 days</option>
+              <option value="12">Last 12 hours</option>
+            </select>
+          </div>
+
+          <div class="chart-legend">
+            <span><i class="legend-dot"></i> AI activity</span>
+            <span class="chart-caption">Illustrative data</span>
+          </div>
+
+          <div class="chart-wrap">
+            <div class="y-labels">
+              <span>100</span><span>75</span><span>50</span><span>25</span><span>0</span>
+            </div>
+            <div class="chart-area">
+              <div class="chart-grid-lines">
+                <i></i><i></i><i></i><i></i><i></i>
+              </div>
+              <svg id="activityChart" viewBox="0 0 700 220" preserveAspectRatio="none" role="img" aria-label="Illustrative AI activity chart">
+                <defs>
+                  <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#21d4fd" stop-opacity=".32"/>
+                    <stop offset="100%" stop-color="#21d4fd" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <path id="chartArea" d="" fill="url(#chartGradient)"></path>
+                <path id="chartLine" d="" fill="none" stroke="#39d9f5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="chartPoints"></g>
+              </svg>
+              <div class="x-labels" id="chartLabels"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- SYSTEM STATUS -->
+        <article class="panel system-panel">
+          <div class="panel-header">
+            <div>
+              <span class="section-kicker">LIVE OVERVIEW</span>
+              <h3>System status</h3>
+            </div>
+            <span class="live-dot"></span>
+          </div>
+
+          <div class="system-score">
+            <div class="score-ring">
+              <div class="score-inner">
+                <strong>98<span>%</span></strong>
+                <small>Demo score</small>
+              </div>
+            </div>
+            <div class="score-copy">
+              <strong>Everything looks good</strong>
+              <p>Sample dashboard status. No real server monitoring is connected.</p>
+            </div>
+          </div>
+
+          <div class="system-list">
+            <div class="system-row">
+              <span class="system-icon cyan">✧</span>
+              <span class="system-name">AI interface</span>
+              <span class="system-state"><i></i> Ready</span>
+            </div>
+            <div class="system-row">
+              <span class="system-icon violet">◉</span>
+              <span class="system-name">Voice module</span>
+              <span class="system-state"><i></i> Available</span>
+            </div>
+            <div class="system-row">
+              <span class="system-icon green">⬡</span>
+              <span class="system-name">Data connection</span>
+              <span class="system-state demo-state">Demo only</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- QUICK TOOLS -->
+        <article class="panel tools-panel" id="tools">
+          <div class="panel-header">
+            <div>
+              <span class="section-kicker">GET THINGS DONE</span>
+              <h3>Quick tools</h3>
+            </div>
+            <span class="muted-small">Choose an action</span>
+          </div>
+
+          <div class="tools-grid">
+            <button class="tool-card" data-tool="chat">
+              <span class="tool-icon tool-cyan">✧</span>
+              <strong>AI Chat</strong>
+              <small>Ask TOBI anything</small>
+              <span class="tool-arrow">↗</span>
+            </button>
+            <button class="tool-card" data-tool="voice">
+              <span class="tool-icon tool-purple">♬</span>
+              <strong>Voice Assistant</strong>
+              <small>Try voice commands</small>
+              <span class="tool-arrow">↗</span>
+            </button>
+            <button class="tool-card" data-tool="tasks">
+              <span class="tool-icon tool-orange">☑</span>
+              <strong>My Tasks</strong>
+              <small>Manage your checklist</small>
+              <span class="tool-arrow">↗</span>
+            </button>
+            <button class="tool-card" data-tool="notes">
+              <span class="tool-icon tool-green">▤</span>
+              <strong>Quick Notes</strong>
+              <small>Write a quick note</small>
+              <span class="tool-arrow">↗</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- RECENT ACTIVITY -->
+        <article class="panel recent-panel">
+          <div class="panel-header">
+            <div>
+              <span class="section-kicker">WORKSPACE HISTORY</span>
+              <h3>Recent activity</h3>
+            </div>
+            <button class="text-button" id="clearActivity">Clear history</button>
+          </div>
+          <div class="activity-list" id="activityList">
+            <div class="activity-item">
+              <div class="activity-icon cyan">✧</div>
+              <div class="activity-detail">
+                <strong>Dashboard opened</strong>
+                <p>Your TOBI workspace is ready.</p>
+              </div>
+              <time>Just now</time>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon violet">◷</div>
+              <div class="activity-detail">
+                <strong>Productivity summary</strong>
+                <p>Demo statistics are available.</p>
+              </div>
+              <time>Today</time>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon green">✓</div>
+              <div class="activity-detail">
+                <strong>System check</strong>
+                <p>Dashboard interface initialized.</p>
+              </div>
+              <time>Today</time>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <span>© <span id="year"></span> TOBI AI</span>
+        <span><i></i> Your personal intelligent workspace</span>
+        <span>Built for the future <b>✦</b></span>
+      </footer>
+    </main>
+  </div>
+
+  <!-- INTERACTION MODAL -->
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close dialog">×</button>
+      <span class="modal-symbol" id="modalSymbol">✧</span>
+      <h2 id="modalTitle">TOBI AI</h2>
+      <p id="modalDescription">Your intelligent workspace.</p>
+      <div id="modalContent"></div>
+      <button class="primary-button modal-action" id="modalAction">Done</button>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b14">
+  <title>TOBI AI | Features & Capabilities</title>
+  <link rel="stylesheet" href="features.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#home" class="brand">
+      <span class="brand-mark">T</span>
+      <span>TOBI<span class="brand-accent"> AI</span></span>
+    </a>
+
+    <button class="mobile-menu" id="mobileMenu"
+      aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#features" class="nav-active">Features</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#security">Security</a>
+      <a href="#get-started" class="nav-cta">Get Started ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span class="pulse-dot"></span>
+          MEET YOUR INTELLIGENT ASSISTANT
+        </div>
+
+        <h1>
+          One assistant.<br>
+          <span>Endless possibilities.</span>
+        </h1>
+
+        <p class="hero-description">
+          Meet TOBI AI — your digital companion for conversations,
+          voice commands, productivity, and smarter everyday workflows.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#features" class="button button-primary">
+            Explore features <span>↘</span>
+          </a>
+          <button class="button button-secondary" id="demoButton">
+            <span class="play-icon">▶</span> Try interactive demo
+          </button>
+        </div>
+
+        <div class="hero-trust">
+          <span><i class="check-icon">✓</i> Voice-enabled experience</span>
+          <span><i class="check-icon">✓</i> Responsive interface</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Decorative TOBI AI core">
+        <div class="visual-grid"></div>
+        <div class="orbit orbit-large"></div>
+        <div class="orbit orbit-medium"></div>
+        <div class="orbit orbit-small"></div>
+
+        <div class="ai-core">
+          <div class="core-shine"></div>
+          <span>T</span>
+        </div>
+
+        <div class="floating-chip chip-top">
+          <span class="chip-icon cyan-text">✧</span>
+          <span><strong>AI CORE</strong><small>Ready to assist</small></span>
+        </div>
+
+        <div class="floating-chip chip-bottom">
+          <span class="chip-icon purple-text">◉</span>
+          <span><strong>VOICE SYSTEM</strong><small>Command interface</small></span>
+        </div>
+
+        <div class="orbit-dot orbit-dot-one"></div>
+        <div class="orbit-dot orbit-dot-two"></div>
+        <div class="orbit-dot orbit-dot-three"></div>
+      </div>
+    </section>
+
+    <!-- FEATURE INTRO -->
+    <section class="features-section section" id="features">
+      <div class="section-heading">
+        <span class="section-tag">POWERFUL FEATURES</span>
+        <h2>Everything you need.<br><span>Nothing holding you back.</span></h2>
+        <p>
+          A collection of intelligent tools designed to make your digital
+          experience simpler, faster, and more interactive.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card feature-large" data-reveal>
+          <div class="card-top">
+            <span class="feature-icon icon-cyan">✧</span>
+            <span class="card-number">01 / AI</span>
+          </div>
+          <div class="card-art chat-art" aria-hidden="true">
+            <div class="chat-bubble bubble-user">Hey TOBI, help me plan my day.</div>
+            <div class="chat-bubble bubble-ai"><span>✦</span> Absolutely! Let's get started.</div>
+            <div class="typing-dots"><i></i><i></i><i></i></div>
+          </div>
+          <h3>Intelligent AI Chat</h3>
+          <p>Ask questions, explore ideas, and get helpful responses through a clean conversational interface.</p>
+          <button class="learn-more" data-feature="chat">Explore AI chat <span>↗</span></button>
+        </article>
+
+        <article class="feature-card" data-reveal>
+          <div class="card-top">
+            <span class="feature-icon icon-purple">♬</span>
+            <span class="card-number">02 / VOICE</span>
+          </div>
+          <div class="card-art voice-art" aria-hidden="true">
+            <div class="sound-bars">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <div class="mic-circle">♬</div>
+          </div>
+          <h3>Voice Interaction</h3>
+          <p>Experience browser-supported speech input and spoken responses for hands-free interaction.</p>
+          <button class="learn-more" data-feature="voice">Explore voice <span>↗</span></button>
+        </article>
+
+        <article class="feature-card" data-reveal>
+          <div class="card-top">
+            <span class="feature-icon icon-green">▥</span>
+            <span class="card-number">03 / INSIGHTS</span>
+          </div>
+          <div class="card-art analytics-art" aria-hidden="true">
+            <div class="analytics-number">+<span>28%</span></div>
+            <div class="analytics-bars">
+              <i style="height:28%"></i>
+              <i style="height:46%"></i>
+              <i style="height:38%"></i>
+              <i style="height:66%"></i>
+              <i style="height:54%"></i>
+              <i style="height:82%"></i>
+              <i style="height:100%"></i>
+            </div>
+          </div>
+          <h3>Smart Dashboard</h3>
+          <p>View activity summaries, task progress, and helpful information in one organized workspace.</p>
+          <button class="learn-more" data-feature="dashboard">Explore dashboard <span>↗</span></button>
+        </article>
+
+        <article class="feature-card" data-reveal>
+          <div class="card-top">
+            <span class="feature-icon icon-orange">☑</span>
+            <span class="card-number">04 / PRODUCTIVITY</span>
+          </div>
+          <div class="card-art tasks-art" aria-hidden="true">
+            <div class="fake-task"><span class="fake-check">✓</span><i></i></div>
+            <div class="fake-task"><span class="fake-check">✓</span><i></i></div>
+            <div class="fake-task"><span class="fake-empty"></span><i></i></div>
+          </div>
+          <h3>Task Management</h3>
+          <p>Organize your to-do list, track completed tasks, and keep your daily priorities visible.</p>
+          <button class="learn-more" data-feature="tasks">Explore tasks <span>↗</span></button>
+        </article>
+
+        <article class="feature-card feature-large" data-reveal>
+          <div class="card-top">
+            <span class="feature-icon icon-blue">▤</span>
+            <span class="card-number">05 / WORKSPACE</span>
+          </div>
+          <div class="card-art notes-art" aria-hidden="true">
+            <div class="note-sheet">
+              <span class="note-title">My ideas</span>
+              <i></i><i></i><i></i>
+              <div class="note-highlight">Capture the moment ✦</div>
+            </div>
+            <div class="note-orbit"></div>
+          </div>
+          <h3>Quick Notes & Ideas</h3>
+          <p>Capture thoughts, write reminders, and keep useful notes close while working with TOBI.</p>
+          <button class="learn-more" data-feature="notes">Explore notes <span>↗</span></button>
+        </article>
+      </div>
+    </section>
+
+    <!-- CAPABILITIES -->
+    <section class="capabilities-section section" id="capabilities">
+      <div class="capabilities-copy">
+        <span class="section-tag">BUILT FOR YOUR WORKFLOW</span>
+        <h2>Small actions.<br><span>Smarter outcomes.</span></h2>
+        <p>
+          TOBI brings useful assistant experiences together in one
+          interface. Start with a capability and customize your workflow
+          as your project grows.
+        </p>
+
+        <div class="capability-list">
+          <div class="capability-item">
+            <span class="cap-check">✓</span>
+            <div><strong>Natural interaction</strong><p>Use text or supported speech input.</p></div>
+          </div>
+          <div class="capability-item">
+            <span class="cap-check">✓</span>
+            <div><strong>Productivity tools</strong><p>Keep notes and tasks organized.</p></div>
+          </div>
+          <div class="capability-item">
+            <span class="cap-check">✓</span>
+            <div><strong>Flexible workspace</strong><p>Designed for desktop, tablet, and mobile.</p></div>
+          </div>
+        </div>
+
+        <button class="button button-primary" id="capabilityButton">
+          See what TOBI can do <span>↗</span>
+        </button>
+      </div>
+
+      <div class="capability-console" data-reveal>
+        <div class="console-header">
+          <div class="window-dots"><i></i><i></i><i></i></div>
+          <span>TOBI / CAPABILITY CENTER</span>
+          <span class="console-status"><i></i> DEMO</span>
+        </div>
+
+        <div class="console-body">
+          <div class="console-orb"><span>T</span></div>
+          <span class="console-label">TOBI ASSISTANT</span>
+          <h3>How can I help you today?</h3>
+          <p>Select an action to explore a sample capability.</p>
+
+          <div class="console-options">
+            <button data-capability="Plan my day" data-reply="A sample daily plan: review your priorities, focus on your most important task, and schedule breaks.">
+              <span>◷</span> Plan my day <b>↗</b>
+            </button>
+            <button data-capability="Help me write" data-reply="Start with your goal, audience, and preferred tone. A connected AI service can help generate a draft.">
+              <span>✎</span> Help me write <b>↗</b>
+            </button>
+            <button data-capability="Organize my tasks" data-reply="Create a short task list, prioritize deadlines, and mark each item complete as you progress.">
+              <span>☑</span> Organize my tasks <b>↗</b>
+            </button>
+          </div>
+
+          <div class="console-reply" id="consoleReply" aria-live="polite">
+            <span>✦</span> Choose an action above to see a demo response.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECURITY -->
+    <section class="security-section section" id="security">
+      <div class="security-card">
+        <div class="security-content">
+          <span class="section-tag">DESIGNED WITH CARE</span>
+          <h2>Your experience.<br><span>Your control.</span></h2>
+          <p>
+            Build a more trustworthy assistant experience with clear
+            permissions, responsible data handling, and secure integration
+            practices.
+          </p>
+
+          <div class="security-points">
+            <div><span>✓</span> Clear permission requests</div>
+            <div><span>✓</span> Secure API integration practices</div>
+            <div><span>✓</span> User-controlled interactions</div>
+          </div>
+        </div>
+
+        <div class="security-visual" aria-hidden="true">
+          <div class="shield-ring shield-ring-one"></div>
+          <div class="shield-ring shield-ring-two"></div>
+          <div class="shield">
+            <svg viewBox="0 0 100 110" fill="none">
+              <path d="M50 5 L87 20 V48 C87 74 71 92 50 104 C29 92 13 74 13 48 V20 Z"
+                stroke="currentColor" stroke-width="3"/>
+              <path d="M32 53 L44 65 L68 39"
+                stroke="currentColor" stroke-width="5"
+                stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="security-orbit-dot"></span>
+        </div>
+      </div>
+      <p class="security-disclaimer">
+        Security features depend on your implementation. This interface alone does not provide encryption,
+        authentication, or backend security.
+      </p>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section section" id="get-started">
+      <div class="cta-glow"></div>
+      <span class="section-tag">YOUR NEXT STEP STARTS HERE</span>
+      <h2>Ready to experience<br><span>a smarter workflow?</span></h2>
+      <p>Explore the TOBI interface and discover the tools you can build around your needs.</p>
+      <div class="cta-actions">
+        <button class="button button-primary" id="getStartedButton">
+          Get started with TOBI <span>↗</span>
+        </button>
+        <a class="button button-secondary" href="#home">Back to top ↑</a>
+      </div>
+      <div class="cta-orb" aria-hidden="true">T</div>
+    </section>
+  </main>
+
+  <!-- INTERACTIVE MODAL -->
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close dialog">×</button>
+      <span class="modal-symbol" id="modalSymbol">✧</span>
+      <h2 id="modalTitle">Explore TOBI</h2>
+      <p id="modalDescription"></p>
+      <div id="modalContent"></div>
+      <button class="button button-primary modal-action" id="modalAction">Done</button>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <a href="#home" class="brand footer-brand">
+      <span class="brand-mark">T</span>
+      <span>TOBI<span class="brand-accent"> AI</span></span>
+    </a>
+    <p>Intelligence for your everyday workflow.</p>
+    <span>© <span id="year"></span> TOBI AI. Demo website.</span>
+  </footer>
+
+  <script src="features.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b14">
+  <meta name="description" content="Meet TOBI AI, your intelligent digital assistant.">
+  <title>TOBI AI | Security & Get Started</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="top">
+    <a href="#top" class="logo" aria-label="TOBI AI home">
+      <span class="logo-icon">T</span>
+      <span>TOBI<span class="logo-highlight"> AI</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#security">Security</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+      <a href="#get-started" class="nav-cta">Get Started ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Security Section -->
+    <section class="security-section section" id="security">
+      <div class="section-heading reveal">
+        <span class="eyebrow">
+          <span class="status-dot"></span>
+          BUILT WITH CARE
+        </span>
+        <h1>Your AI. Your <span class="gradient-text">Control.</span></h1>
+        <p class="section-description">
+          A smarter assistant should also give you clarity and control.
+          TOBI's interface is designed with privacy-conscious features in mind.
+        </p>
+      </div>
+
+      <div class="security-layout">
+        <div class="security-visual reveal">
+          <div class="orbit orbit-outer"></div>
+          <div class="orbit orbit-inner"></div>
+
+          <div class="shield-glow">
+            <svg viewBox="0 0 120 140" role="img"
+              aria-label="Shield illustration">
+              <defs>
+                <linearGradient id="shieldGradient" x1="0" y1="0"
+                  x2="1" y2="1">
+                  <stop offset="0%" stop-color="#42f5ff"/>
+                  <stop offset="100%" stop-color="#8b5cf6"/>
+                </linearGradient>
+              </defs>
+              <path d="M60 8 L103 25 V60
+                C103 91 84 113 60 130
+                C36 113 17 91 17 60 V25 Z"
+                fill="rgba(66,245,255,0.08)"
+                stroke="url(#shieldGradient)"
+                stroke-width="3"/>
+              <path d="M39 66 L53 80 L82 49"
+                fill="none" stroke="#65f7ff"
+                stroke-width="6" stroke-linecap="round"
+                stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <span class="floating-tag tag-top">Privacy conscious</span>
+          <span class="floating-tag tag-bottom">You stay in control</span>
+        </div>
+
+        <div class="security-cards" id="features">
+          <article class="security-card reveal">
+            <div class="card-icon cyan-icon">◈</div>
+            <div>
+              <h3>Privacy Awareness</h3>
+              <p>
+                Design your experience around thoughtful handling of
+                personal information. Avoid sharing sensitive data unnecessarily.
+              </p>
+            </div>
+            <span class="card-number">01</span>
+          </article>
+
+          <article class="security-card reveal">
+            <div class="card-icon purple-icon">⌘</div>
+            <div>
+              <h3>Access Control</h3>
+              <p>
+                Add authentication and permission checks when connecting
+                TOBI to accounts, files, or external services.
+              </p>
+            </div>
+            <span class="card-number">02</span>
+          </article>
+
+          <article class="security-card reveal">
+            <div class="card-icon blue-icon">⛨</div>
+            <div>
+              <h3>Secure Integration</h3>
+              <p>
+                Connect real AI services through a secure backend.
+                Keep API keys out of browser-side JavaScript.
+              </p>
+            </div>
+            <span class="card-number">03</span>
+          </article>
+        </div>
+      </div>
+
+      <p class="security-note reveal">
+        <span>ⓘ</span>
+        This is a front-end demo. These visual elements do not themselves
+        provide encryption, authentication, or data protection.
+      </p>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="cta-section section" id="get-started">
+      <div class="cta-box reveal">
+        <div class="cta-grid"></div>
+
+        <div class="cta-content">
+          <span class="eyebrow">
+            <span class="status-dot"></span>
+            YOUR NEXT-LEVEL ASSISTANT
+          </span>
+
+          <h2>Ready to meet your<br>
+            <span class="gradient-text">AI companion?</span>
+          </h2>
+
+          <p>
+            Think faster, explore ideas, and make your everyday digital
+            tasks feel simpler with TOBI AI.
+          </p>
+
+          <div class="cta-actions">
+            <button class="primary-button" id="launchButton">
+              Explore TOBI <span>↗</span>
+            </button>
+            <a href="#security" class="secondary-button">
+              Explore security
+            </a>
+          </div>
+
+          <div class="cta-caption">
+            <span class="mini-dot"></span>
+            A demo experience — connect an AI backend for real AI responses.
+          </div>
+        </div>
+
+        <div class="cta-orb-area" aria-hidden="true">
+          <div class="cta-orb-ring ring-one"></div>
+          <div class="cta-orb-ring ring-two"></div>
+          <div class="cta-orb">
+            <div class="orb-core">T</div>
+          </div>
+          <span class="orb-label">TOBI AI</span>
+          <span class="orb-spark spark-one">✦</span>
+          <span class="orb-spark spark-two">✧</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="#top" class="logo">
+          <span class="logo-icon">T</span>
+          <span>TOBI<span class="logo-highlight"> AI</span></span>
+        </a>
+        <p>
+          A little more intelligence.<br>
+          A lot more possibility.
+        </p>
+
+        <a class="email-link" href="mailto:hello@example.com">
+          hello@example.com ↗
+        </a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <a href="#top">Home</a>
+        <a href="#features">Capabilities</a>
+        <a href="#security">Security</a>
+        <a href="#get-started">Get started</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <a href="#security">Privacy overview</a>
+        <a href="#security">Security approach</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Connect</h4>
+        <!-- Replace these placeholder links with your real profiles -->
+        <a href="https://github.com/" target="_blank"
+          rel="noopener noreferrer">GitHub ↗</a>
+        <a href="https://www.linkedin.com/" target="_blank"
+          rel="noopener noreferrer">LinkedIn ↗</a>
+        <a href="mailto:hello@example.com">Email ↗</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="currentYear"></span> TOBI AI. All rights reserved.</p>
+      <p class="footer-status">
+        <span class="status-dot"></span> Designed for a smarter future
+      </p>
+      <a href="#top" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Demo notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span class="toast-icon">✦</span>
+    <div>
+      <strong>Welcome to TOBI AI!</strong>
+      <p>This is the landing-page demo. Connect your AI assistant to continue.</p>
+    </div>
+    <button id="closeToast" aria-label="Close notification">×</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
